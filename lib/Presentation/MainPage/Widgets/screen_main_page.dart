@@ -9,7 +9,7 @@ import 'bottom_nav.dart';
 class ScreenMainPage extends StatelessWidget {
   ScreenMainPage({Key? key}) : super(key: key);
 
-  final _pages = const [
+  final _pages =  [
     HomeTab(),
     NewAndHotTab(),
     FastLaughsTab(),

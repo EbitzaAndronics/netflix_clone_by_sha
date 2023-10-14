@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'Core/Colors/colors.dart';
 import 'Presentation/MainPage/Widgets/screen_main_page.dart';
 
@@ -17,15 +18,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         scaffoldBackgroundColor: backGroundColor,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         backgroundColor: Colors.black,
+        fontFamily: GoogleFonts.montserrat().fontFamily,
         textTheme: const TextTheme(
           bodyText1: TextStyle(color: Colors.white),
           bodyText2: TextStyle(color: Colors.white),
         ),
         useMaterial3: true,
       ),
-      home:  ScreenMainPage(),
+      home:  SafeArea(
+          child: ScreenMainPage()
+      ),
     );
   }
 }

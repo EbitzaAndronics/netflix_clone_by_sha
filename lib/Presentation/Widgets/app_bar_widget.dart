@@ -1,17 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../../Core/Colors/constance.dart';
 
 class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({Key? key}) : super(key: key);
+  const AppBarWidget({Key? key, required this.title}) : super(key: key);
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return  Row(
       children: [
-        Text('Downloads'),
-        Icon(Icons.cast),
-        Container(
-          color: Colors.blue,
+        Text(title,
+        style:const TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold
         )
+        ),
+        const Spacer(),
+        const Icon(Icons.cast,
+        color: Colors.white,
+        size: 30,),
+        kWidth,
+        Container(
+          width: 30,
+          height: 30,
+          color: Colors.blue,
+        ),
+        kWidth,
       ],
     );
   }

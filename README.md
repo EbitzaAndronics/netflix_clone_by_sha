@@ -17,6 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 API site:-
 https://www.themoviedb.org/settings/api
+
 user name:- sha_kkd
 pass:- mudickalpo
 
