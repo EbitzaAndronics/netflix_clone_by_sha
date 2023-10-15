@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_by_sha/Core/Colors/constance.dart';
-import 'package:netflix_clone_by_sha/Presentation/Search/Widgets/search_tab.dart';
 import 'package:netflix_clone_by_sha/Presentation/Search/Widgets/title.dart';
+
+import '../../Widgets/main_card_widget.dart';
 
 class SearchResultWidget extends StatelessWidget {
   const SearchResultWidget({super.key});
@@ -29,21 +30,21 @@ class SearchResultWidget extends StatelessWidget {
   }
 }
 
-class MainCard extends StatelessWidget {
-  const MainCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      //width: ,
-      //height: ,
-      decoration: BoxDecoration(
-        image: const DecorationImage(
-          image: NetworkImage(imageVerticalUrl),
-          fit: BoxFit.cover
-        ),
-        borderRadius: BorderRadius.circular(7),
-      ),
-    );
-  }
-}
+// class MainCard extends StatelessWidget {
+//   const MainCard({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       //width: ,
+//       //height: ,
+//       decoration: BoxDecoration(
+//         image: const DecorationImage(
+//           image: NetworkImage(imageVerticalUrl),
+//           fit: BoxFit.cover
+//         ),
+//         borderRadius: BorderRadius.circular(7),
+//       ),
+//     );
+//   }
+// }

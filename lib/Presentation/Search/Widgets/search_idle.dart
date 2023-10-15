@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:netflix_clone_by_sha/Presentation/Search/Widgets/search_tab.dart';
 import 'package:netflix_clone_by_sha/Presentation/Search/Widgets/title.dart';
 
 import '../../../Core/Colors/constance.dart';
@@ -43,7 +42,7 @@ class TopSearchItemTile extends StatelessWidget {
           height: 100,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(imageUrl),
+              image: NetworkImage(imageHorizontalUrl),
               fit: BoxFit.cover,
             )
           ),
