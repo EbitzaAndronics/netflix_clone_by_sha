@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone_by_sha/Presentation/FastLaughs/Widgets/video_list_item.dart';
 
 class FastLaughsTab extends StatelessWidget {
   const FastLaughsTab({Key? key}) : super(key: key);
@@ -7,9 +8,12 @@ class FastLaughsTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Center(
-          child: Text('Fast laughs'),
-        ),
+        child: PageView(
+          scrollDirection: Axis.vertical,
+          children: List.generate(10, (index) {
+            return VideoListItem(index: index,);
+          }),
+        )
       ),
     );
   }
