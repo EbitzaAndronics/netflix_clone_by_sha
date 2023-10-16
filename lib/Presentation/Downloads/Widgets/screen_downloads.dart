@@ -22,7 +22,7 @@ class DownloadsTab extends StatelessWidget {
         child: AppBarWidget(title: 'Downloads',),
       ),
       body: ListView.separated(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         itemCount: _widgetList.length,
           itemBuilder: (context, index) => _widgetList[index],
           separatorBuilder: (context, index) => const SizedBox(height: 25,),

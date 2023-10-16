@@ -10,10 +10,10 @@ class ScreenMainPage extends StatelessWidget {
   ScreenMainPage({Key? key}) : super(key: key);
 
   final _pages =  [
-    HomeTab(),
-    NewAndHotTab(),
-    FastLaughsTab(),
-    SearchTab(),
+    const HomeTab(),
+    const NewAndHotTab(),
+    const FastLaughsTab(),
+    const SearchTab(),
     DownloadsTab(),
   ];
 

@@ -11,9 +11,9 @@ class PlayButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton.icon(
       onPressed: (){},
-      icon: Icon(Icons.play_arrow,
+      icon: const Icon(Icons.play_arrow,
         size: 30,),
-      label: Text('Play',
+      label: const Text('Play',
         style: TextStyle(
             fontSize: 20,
             color: kColorBlack

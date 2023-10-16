@@ -13,13 +13,13 @@ class NumberCardWidget extends StatelessWidget {
       children: [
         Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 50,
               height: 250,
             ),
             Container(
               //alignment: Alignment.center,
-              margin: EdgeInsets.all(5),
+              margin: const EdgeInsets.all(5),
               width: 150,
               height: 250,
               decoration: BoxDecoration(

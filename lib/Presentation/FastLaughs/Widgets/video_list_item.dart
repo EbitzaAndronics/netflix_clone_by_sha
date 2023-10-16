@@ -27,6 +27,7 @@ class VideoListItem extends StatelessWidget {
                       onPressed: (){},
                       icon: const Icon(
                         Icons.volume_off,
+                      color: kColorWhite,
                       size: 35,)),
                 ),
 

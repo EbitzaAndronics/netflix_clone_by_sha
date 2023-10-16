@@ -14,18 +14,94 @@ class HomeTab extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            floating: true,
-            //expandedHeight: 100,
             backgroundColor: Colors.transparent,
-            title: Text('Netflix app',
-                style: TextStyle(
-                  color: kColorWhite,
+            bottom: AppBar(
+              backgroundColor: Colors.transparent,
+              title: Container(
+                height: 50,
+                color: Colors.transparent,
+                child: const Row(
+                  children: [
+                    Expanded(
+                        child: Text("TV Shows",
+                        style: TextStyle(
+                          color: kColorWhite,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold
+                        ),
+                        )
+                    ),
+                    Expanded(
+                        child: Text("Movies",
+                          style: TextStyle(
+                              color: kColorWhite,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold
+                          ),
+                        )
+                    ),
+                    Expanded(
+                        child: Text("Categories",
+                          style: TextStyle(
+                              color: kColorWhite,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold
+                          ),
+                        )
+                    ),
+                  ],
                 ),
+              ),
             ),
+            flexibleSpace: const SizedBox(
+              //width: 20,
+              height: 50,
+            ),
+            floating: true,
+            expandedHeight: 100,
+            //backgroundColor: Colors.yellow,
+            title: SizedBox(
+              height: 50,
+              child: Row(
+                children: [
+                  const Spacer(),
+                  const Icon(Icons.cast,
+                    color: Colors.white,
+                    size: 30,),
+                  kWidth,
+                  Container(
+                    width: 30,
+                    height: 30,
+                    color: Colors.blue,
+                  ),
+                  kWidth,
+                ],
+              ),
+            ),
+
+            leading: const SizedBox(
+              width: 20,
+              height: 50,
+              child: Text("N",
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 40,
+                fontWeight: FontWeight.bold
+              ),
+              ),
+            ),
+            // Text('Netflix app',
+            //     style: TextStyle(
+            //       color: kColorWhite,
+            //     ),
+            // ),
           ),
+
+
+
           SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Column(
                 children: [
                   Stack(
@@ -44,7 +120,7 @@ class HomeTab extends StatelessWidget {
                       Positioned(
                         bottom: 0,
                         left: MediaQuery.of(context).size.width * 0.10,
-                        child:  Padding(
+                        child:  const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Row(
                             //mainAxisAlignment: MainAxisAlignment.spaceEvenly,

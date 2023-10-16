@@ -8,7 +8,7 @@ class MainCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       //alignment: Alignment.center,
-      margin: EdgeInsets.all(5),
+      margin: const EdgeInsets.all(5),
       width: 150,
       height: 250,
       decoration: BoxDecoration(
