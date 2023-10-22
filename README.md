@@ -28,3 +28,8 @@ eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZDc4M2VmODQ0NWQwYWExZmJkMGI5NmFjNzI3OTBmOSIsInN
 
 Sample api:-
 https://api.themoviedb.org/3/movie/550?api_key=4d783ef8445d0aa1fbd0b96ac72790f9
+
+import 'package:build_runner/build_runner.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:json_annotation/json_annotation.dart';
+import 'package:json_serializable/json_serializable.dart';
